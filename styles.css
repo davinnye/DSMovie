@@ -44,9 +44,9 @@ nav a {
     font-weight: 400;
 }
 
-a, a:hover {
+#gitlink {
     text-decoration: none;
-    color: unset;
+    color: var(--white);
 }
 
 .dsmovie-contact-container img{
@@ -120,11 +120,18 @@ a, a:hover {
     justify-content: center;
     border-radius: 4px;
     border: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.dsmovie-btn:hover {
+    background-color: #948dd7;
+    color: var(--white);
 }
 
 .dsmovie-form-container {
     padding: 40px 0;
     max-width: 480px;
+    margin: 0 auto;
 }
 
 .dsmovie-form-description{
@@ -173,6 +180,7 @@ a, a:hover {
     display: flex;
     width: 180px;
     justify-content: space-between;
+    align-items: center;
 }
 
 .dsmovie-pagination-box p {
